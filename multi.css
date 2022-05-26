@@ -5,32 +5,33 @@
     font-family: 'Open Sans';
     --text-primary: #b6b6b6;
     --text-secondary: #ececec;
-    --bg-primary: #23232e;
-    --bg-secondary: #141418;
+    --bg-primary: #23232e; /*css variables*/
+    --bg-secondary: #141418; /*css variables*/
     --transition-speed: 600ms;
 }
   
 body {
     color: black;
-    background-color: white;
+    background-color: whitesmoke;
     margin: 0;
     padding: 0;
 }
   
-body::-webkit-scrollbar {
+body::-webkit-scrollbar {/*scroll*/
     width: 0.25rem;
 }
   
-body::-webkit-scrollbar-track {
+body::-webkit-scrollbar-track {/*scroll*/
     background: #1e1e24;
 }
   
-body::-webkit-scrollbar-thumb {
-    background: #6649b8;
+body::-webkit-scrollbar-thumb {/*scroll*/
+    background: #4502fc;
 }
   
-main {
+main {/*text*/
     margin-left: 5rem;
+    margin-right: ;
     padding: 1rem;
 }
   
@@ -41,7 +42,7 @@ main {
     overflow: scroll;
 }
   
-.navbar-nav {
+.navbar-nav { /* ul, on estan els emoticonos/ flex container*/
     list-style: none;
     padding: 0;
     margin: 0;
@@ -51,7 +52,7 @@ main {
     height: 100%;
 }
   
-.nav-item {
+.nav-item { /*on estan els emoticonos dels animals*/
     width: 100%;
 }
   
@@ -87,11 +88,11 @@ main {
 }
   
 .fa-primary {
-    color: #ff7eee;
+    color: #4502fc;/*#ff7eee;*/
 }
   
 .fa-secondary {
-    color: #df49a6;
+    color: whitesmoke; #df49a6;
 }
   
 .fa-primary,
