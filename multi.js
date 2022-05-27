@@ -4,9 +4,7 @@ const themeMap = {
     solar: "dark"
 };
   
-const theme = localStorage.getItem('theme')
-
-|| (tmp = Object.keys(themeMap)[0], localStorage.setItem('theme', tmp), tmp);
+const theme = localStorage.getItem('theme') || (tmp = Object.keys(themeMap)[0], localStorage.setItem('theme', tmp), tmp);
 
 const bodyClass = document.body.classList;
 
