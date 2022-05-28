@@ -2,9 +2,9 @@
 
 
 :root {
-    font-size: 16px;
+    font-size: 15px;
     font-family: 'Open Sans';
-    --text-primary: #b6b6b6;
+    --text-primary: #5b78c7;/*#b6b6b6;*/
     --text-secondary: #ececec;
     --bg-primary: #23232e;
     --bg-secondary: #141418;
@@ -32,9 +32,15 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-    background: #6649b8;
+    background: #5b78c7; /*#6649b8;*/
 }
 
+.navbar {
+    position: fixed;
+    background-color: var(--bg-primary);
+    transition: width 600ms ease;
+    overflow: scroll;
+}
 
 .navbar-nav {
     list-style: none;
@@ -118,10 +124,10 @@ body::-webkit-scrollbar-thumb {
     .nav-link {
         justify-content: center;
     }
-
+    /*
     .texto {
         margin: 0;
-    }
+    }*/
 }
 
 /*pantallas grans*/
@@ -182,11 +188,26 @@ body::-webkit-scrollbar-thumb {
     display: block;
 }
 
-/*
+
 .texto {
     text-align: justify;
 }
 
+h1 {
+    display: block;
+    font-size: 2rem;
+    margin-block-start: 0.67rem;
+    margin-block-end: 0.67rem;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
 p {
     width: 95%;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
