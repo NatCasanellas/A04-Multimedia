@@ -1,8 +1,4 @@
-const themeMap = {
-    dark: "light",
-    light: "solar",
-    solar: "dark"
-};
+const themeMap = { dark: "light", light: "solar", solar: "dark"};
   
 const theme = localStorage.getItem('theme') || (tmp = Object.keys(themeMap)[0], localStorage.setItem('theme', tmp), tmp);
 
