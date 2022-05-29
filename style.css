@@ -1,20 +1,14 @@
 @import "reset.css";
 
-
 :root {
     font-size: 15px;
     font-family: 'Open Sans';
     --text-primary: #5b78c7;/*#b6b6b6;*/
     --text-secondary: #ececec;
-    --bg-primary: #23232e;
-    --bg-secondary: #141418;
+    --bg-primary: #8686ef;
+    --bg-secondary: #0e0ebe;/*#141418;*/
     --transition-speed: 600ms;
 }
-/*
-*{
-    margin: 0;
-    box-sizing: border-box;
-}*/
 
 body {
     color: black;
@@ -39,19 +33,25 @@ body::-webkit-scrollbar-thumb {
     position: fixed;
     background-color: var(--bg-primary);
     transition: width 600ms ease;
-    overflow: scroll;
+
+    flex-direction: column;
+    align-items: flex-start;
+    /*overflow: scroll;*/
 }
 
 .navbar-nav {
     list-style: none;
-    padding: 0;
-    margin: 0;
+    padding: 1rem;
+    margin: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100%;
 }
 
+.navbar-nav li {
+    flex-direction: column;
+} 
 
 .nav-item {
     width: 100%;
@@ -68,7 +68,7 @@ body::-webkit-scrollbar-thumb {
     color: blueviolet;
     text-decoration: none;
     filter: grayscale(100%) opacity(0.7);
-    transition: var(--transition-speed); /*0.5s;*/
+    transition: /*var(--transition-speed);*/0.5s;
 }
 
 .nav-link:hover {
@@ -78,13 +78,13 @@ body::-webkit-scrollbar-thumb {
 }
 
 .link-text {
-   /* white-space: nowrap;
-    -webkit-text-stroke: 0.75px lightcoral;
-    display: none;*//*no es vue les llestres si esta activat*/
-    display: none;/*no apareixen les lletres*/
-    margin-left: 1rem;
-    color: lightseagreen;
-    font-weight: bold;
+   white-space: nowrap;
+   -webkit-text-stroke: 0.75px lightcoral;
+   display: none;*//*no es veuen les llestres si esta activat*/
+    
+   margin-left: 3rem;
+   color: white;
+   font-weight: bold;
 }
 
 .logo {
@@ -103,6 +103,9 @@ body::-webkit-scrollbar-thumb {
     position: absolute;
     left: -999px;
     transition: var(--transition-speed);
+
+    white-space: nowrap;
+    -webkit-text-stroke: 1px black;
 }
 
 /*pantalles petites*/
